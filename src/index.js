@@ -1,6 +1,10 @@
 import React from 'react'
-import styles from './styles.module.css'
+import './tailwind.css'
 
-export const ExampleComponent = ({ text }) => {
-  return <div className={styles.test}>Example Component: {text}</div>
+export const RButton = ({ children, onClick }) => {
+  return (
+    <button className='p-2 bg-gray-700 text-white rounded-md' onClick={onClick}>
+      {children}
+    </button>
+  )
 }
